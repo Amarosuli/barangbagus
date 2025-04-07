@@ -41,7 +41,7 @@
 	<h1 class="text-center font-nerko-one text-4xl font-bold text-slate-700">Pilih Produk Digital mu</h1>
 	<div class="mt-6 flex w-max snap-x snap-mandatory justify-center gap-4 overflow-auto">
 		{#each products as product}
-			<button class="flex h-60 w-60 snap-always items-center justify-center rounded-2xl bg-purple-300 font-nerko-one text-xl text-purple-600" on:click={() => goto(product.url)}>{product.title}</button>
+			<button class="flex h-60 w-60 snap-always items-center justify-center rounded-2xl bg-purple-300 font-nerko-one text-xl text-purple-600" onclick={() => goto(product.url)}>{product.title}</button>
 		{/each}
 	</div>
 </section>

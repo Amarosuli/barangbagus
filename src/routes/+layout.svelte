@@ -19,14 +19,14 @@
 {/if}
 
 <div class="fixed top-0 -z-10 h-full w-full bg-stone-50">
-	<div class="absolute bottom-auto left-auto right-0 top-0 h-[500px] w-[500px] -translate-x-[30%] translate-y-[20%] rounded-full bg-[rgba(173,109,244,0.5)] opacity-50 blur-[80px]"></div>
+	<div class="absolute top-0 right-0 bottom-auto left-auto h-[500px] w-[500px] -translate-x-[30%] translate-y-[20%] rounded-full bg-[rgba(173,109,244,0.5)] opacity-50 blur-[80px]"></div>
 </div>
 <div class="container mx-auto">
 	<div class="flex h-12 w-full items-center justify-between border-b p-4 lg:p-8">
 		<button onclick={() => goto('/')}>
-			<h1 class="font-nerko-one text-xl text-purple-800 lg:text-3xl">😍 Barang Bagus</h1>
+			<h1 class="font-nerko-one text-md font-extrabold text-purple-800 transition-colors ease-in-out hover:text-slate-500 lg:text-2xl">😍 Barang Bagus</h1>
 		</button>
-		<button onclick={() => (isCommentOpen = true)} class="text-sm font-bold text-slate-600 lg:text-xl">Saran, Komentar & Testimonial</button>
+		<button onclick={() => (isCommentOpen = true)} class="text-md font-semibold text-slate-600 transition-colors ease-in-out hover:text-purple-700 lg:text-2xl">Saran & Testimonial</button>
 	</div>
 
 	{@render children?.()}
